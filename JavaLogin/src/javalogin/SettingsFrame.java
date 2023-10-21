@@ -104,19 +104,34 @@ public class SettingsFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDarkActionPerformed
+    private void btnDarkActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the dark theme button is clicked
+
+        // Show a dialog box with a message indicating that the dark theme has been
+        // chosen
         JOptionPane.showMessageDialog(null, "You have chosen the dark theme");
-    }//GEN-LAST:event_btnDarkActionPerformed
+    }
 
-    private void btnLightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLightActionPerformed
+    private void btnLightActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the light theme button is clicked
+
+        // Show a dialog box with a message indicating that the light theme has been
+        // chosen
         JOptionPane.showMessageDialog(null, "You have chosen the light theme");
-    }//GEN-LAST:event_btnLightActionPerformed
+    }
 
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the close button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the ProfileFrame class
         ProfileFrame profileframe = new ProfileFrame();
+
+        // Set the profile frame to be visible
         profileframe.setVisible(true);
-    }//GEN-LAST:event_btnCloseActionPerformed
+    }
 
     /**
      * @param args the command line arguments

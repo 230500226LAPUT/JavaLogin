@@ -112,29 +112,57 @@ public class ProfileFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the logout button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the LoginFrame class
         LoginFrame loginframe = new LoginFrame();
+
+        // Set the login frame to be visible
         loginframe.setVisible(true);
-    }//GEN-LAST:event_btnLogoutActionPerformed
+    }
 
-    private void btnSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSettingsActionPerformed
+    private void btnSettingsActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the settings button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the SettingsFrame class
         SettingsFrame settingsframe = new SettingsFrame();
+
+        // Set the settings frame to be visible
         settingsframe.setVisible(true);
-    }//GEN-LAST:event_btnSettingsActionPerformed
+    }
 
-    private void btnAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAboutActionPerformed
+    private void btnAboutActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the about button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the AboutFrame class
         AboutFrame aboutframe = new AboutFrame();
-        aboutframe.setVisible(true); 
-    }//GEN-LAST:event_btnAboutActionPerformed
 
-    private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
+        // Set the about frame to be visible
+        aboutframe.setVisible(true);
+    }
+
+    private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the help button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the HelpFrame class
         HelpFrame helpframe = new HelpFrame();
+
+        // Set the help frame to be visible
         helpframe.setVisible(true);
-    }//GEN-LAST:event_btnHelpActionPerformed
+    }
 
     /**
      * @param args the command line arguments

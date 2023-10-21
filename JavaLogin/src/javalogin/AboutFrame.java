@@ -93,8 +93,13 @@ public class AboutFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // Close the cirrent window
         dispose();
+        
+        // Create a new instance of the ProfileFrame class
         ProfileFrame profileframe = new ProfileFrame();
+
+        // Set the profile frame to be visible
         profileframe.setVisible(true);
     }//GEN-LAST:event_btnBackActionPerformed
 

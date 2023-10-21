@@ -102,19 +102,31 @@ public class LoginFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the login button is clicked
+
+        // Get the username from the txtUsername text field
         String username = txtUsername.getText();
+
+        // Get the password from the txtPassword text field
         String password = txtPassword.getText();
 
-        if(username.equals("Admin")&&password.equals("admin")){
+        // Check if the username and password match "Admin" and "admin" respectively
+        if (username.equals("Admin") && password.equals("admin")) {
+            // If they match, close the current window
             dispose();
+
+            // Create a new instance of the ProfileFrame class
             ProfileFrame profileframe = new ProfileFrame();
+
+            // Set the profile frame to be visible
             profileframe.setVisible(true);
         } else {
+            // If they don't match, show a dialog box with an error message
             JOptionPane.showMessageDialog(null, "Wrong username or password");
         }
+    }
 
-    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments

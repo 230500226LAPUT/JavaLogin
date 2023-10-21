@@ -14,8 +14,12 @@ public class JavaLogin {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Create a new instance of the LoginFrame class
         LoginFrame loginframe = new LoginFrame();
+
+        // Set the login frame to be visible
         loginframe.setVisible(true);
     }
+
     
 }

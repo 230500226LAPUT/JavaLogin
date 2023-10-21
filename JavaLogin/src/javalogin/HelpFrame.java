@@ -95,15 +95,26 @@ public class HelpFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGoActionPerformed
-        JOptionPane.showMessageDialog(null, "You have searched for help");
-    }//GEN-LAST:event_btnGoActionPerformed
+    private void btnGoActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the Go button is clicked
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // Show a dialog box with a message indicating that a help search has been
+        // initiated
+        JOptionPane.showMessageDialog(null, "You have searched for help");
+    }
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {
+        // This method is called when the Back button is clicked
+
+        // Close the current window
         dispose();
+
+        // Create a new instance of the ProfileFrame class
         ProfileFrame profileframe = new ProfileFrame();
+
+        // Set the profile frame to be visible
         profileframe.setVisible(true);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }
 
     /**
      * @param args the command line arguments
